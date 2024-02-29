@@ -8,7 +8,8 @@ const Card = ({
   column,
   handleDragStart
 }: CardType & {
-  handleDragStart: (e: React.DragEvent, card: CardType) => void;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  handleDragStart: (e: React.DragEvent | any, card: CardType) => void;
 }) => {
   return (
     <>
